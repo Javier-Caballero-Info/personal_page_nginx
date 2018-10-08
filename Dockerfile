@@ -1,9 +1,9 @@
-FROM nginx:latest
-
-RUN rm /etc/nginx/conf.d/default.conf
+FROM danday74/nginx-lua
 
 COPY default.conf /etc/nginx/conf.d/
 
-RUN rm /usr/share/nginx/html/index.html
+COPY nginx.conf /nginx/conf/nginx.conf
+
+RUN mkdir /var/log/nginx/
 
 EXPOSE 80
