@@ -39,11 +39,11 @@ To run the server on a Docker container, please execute the following from the r
 
 ### Building the image
 ```bash
-docker build -t personal_page .
+docker build -t personal_page_nginx .
 ```
 ### Starting up a container
 ```bash
-docker run -p 80:80 -d personal_page
+docker run -p 80:80 -d personal_page_nginx
 ```
 ## Contributing
 
